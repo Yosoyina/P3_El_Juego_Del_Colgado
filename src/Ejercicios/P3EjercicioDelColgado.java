@@ -8,7 +8,6 @@ public class P3EjercicioDelColgado {
 
 		Scanner teclado = new Scanner(System.in);
 		
-		int i = 0;
 		int [] Arrayjugadores; // Creamos la array para los jugadores que se introduzcan los que juegan
 		int Njugadores = 0; // Variable del Numero de Jugadores que van a jugar
 		
@@ -17,8 +16,18 @@ public class P3EjercicioDelColgado {
 		System.out.println("|                                            |");
 		System.out.println("|      Bienvenido al Juego del Colgado       |");
 		System.out.println("|____________________________________________|");
+		
+		
+		System.out.println(" _____________________________________________");
+		
+		
+		System.out.println(" ____________________________________________");
+		System.out.println("|                                            |");
+		System.out.println("|          Introduce la Pala Secreta         |");
+		System.out.println("|____________________________________________|");
 	
 		String PalabraSecreta = "";
+		PalabraSecreta = teclado.next();
 		
 		System.out.println(" ______________________________________________");
 		System.out.println("|                                              |");
@@ -28,7 +37,7 @@ public class P3EjercicioDelColgado {
 		int rondas = teclado.nextInt();
 		
 		
-		for ( i = 0; i < rondas; i++) {
+		for (int i = 0; i < rondas; i++) {
 			
 			System.out.println(" ______________________________________________");
 			System.out.println("|                                              |");
@@ -56,31 +65,43 @@ public class P3EjercicioDelColgado {
 			String [] NomJugadores; // Una array de jugadores pero para las letras
 			NomJugadores = new String [Njugadores]; // Coje el numero de jugadores y de tantos jugadores se pone el nombre de cada jugador
 			
-			for ( i = 0; i < NomJugadores.length; i++) {
+			for (int j = 0; j < NomJugadores.length; j++) {
 				
 				System.out.println(" ______________________________________________");
 				System.out.println("|                                              |");
 				System.out.println("|     Introduce el nombre de cada Jugador:     |");
 				System.out.println("|______________________________________________|");
 				
-				NomJugadores[i] = teclado.next(); // se introducce el nombre de los jugadores indicados
+				NomJugadores[j] = teclado.next(); // se introducce el nombre de los jugadores indicados
 				
 			}
-		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+			
+			
+			int [] vidasJ ; // creamos la arraid de las vidas de los jugadores
+			vidasJ = new int [Njugadores]; // las vidas de tantos jugadores de los que van a jugar
+			
+			for (int j = 0; j < vidasJ.length; j++) {
+				
+				vidasJ[j] = vidasJ[j] + 6; // las vidas se guardan en dentro de la arraid que son 6
+				
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		} // acaba el bucle for de las rondas
 	}
 
 }
