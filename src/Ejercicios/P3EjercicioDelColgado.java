@@ -21,7 +21,7 @@ public class P3EjercicioDelColgado {
 		System.out.println("|____________________________________________|");
 		
 		
-		
+		// APARTADO DE CUANTOS JUGADORES QUIEREN JUGAR
 		
 		System.out.println(" ______________________________________________");
 		System.out.println("|                                              |");
@@ -46,6 +46,8 @@ public class P3EjercicioDelColgado {
 		
 		Arrayjugadores = new int [Njugadores]; // De la arrayjugadores se introduccen los jugadores cuantos van a jugar i se crean esas arrays
 		
+		// APARTADO DONDE SE ESCRIBEN LOS NOMBRES DE LOS JUGADOR INDICADOS ANTERIORMENTE
+		
 		String [] NomJugadores; // Una array de jugadores pero para las letras
 		NomJugadores = new String [Njugadores]; // Coje el numero de jugadores y de tantos jugadores se pone el nombre de cada jugador
 		
@@ -59,6 +61,19 @@ public class P3EjercicioDelColgado {
 			NomJugadores[j] = teclado.next(); // se introducce el nombre de los jugadores indicados
 			
 		}
+	
+		// APARTADO DE LAS VIDAS DE LOS JUGADORES
+		
+		int [] vidasJ ; // creamos la arraid de las vidas de los jugadores
+		vidasJ = new int [Njugadores]; // las vidas de tantos jugadores de los que van a jugar
+		
+		for (int j = 0; j < vidasJ.length; j++) {
+			
+			vidasJ[j] = vidasJ[j] + 6; // las vidas se guardan en dentro de la arraid que son 6
+			
+		}
+		
+		// APARTADO DE LAS RONDAS E INICIALIZACION DE LOS JUEGOS
 		
 		System.out.println(" ______________________________________________");
 		System.out.println("|                                              |");
@@ -70,6 +85,8 @@ public class P3EjercicioDelColgado {
 		// Es el bucle de las rondas
 		for (int i = 0; i < rondas; i++) {
 			
+			
+			// APARTADO DONDE SE ECOGE UN JUGADOR ALEATORIAMENTE PARA QUE ESCRIBA LA PALABRA SECRETA
 			
 			for (int j = 0; j < NomJugadores.length; j++) {
 			
@@ -88,14 +105,6 @@ public class P3EjercicioDelColgado {
 			}
 			
 			
-			int [] vidasJ ; // creamos la arraid de las vidas de los jugadores
-			vidasJ = new int [Njugadores]; // las vidas de tantos jugadores de los que van a jugar
-			
-			for (int j = 0; j < vidasJ.length; j++) {
-				
-				vidasJ[j] = vidasJ[j] + 6; // las vidas se guardan en dentro de la arraid que son 6
-				
-			}
 			
 			
 			
