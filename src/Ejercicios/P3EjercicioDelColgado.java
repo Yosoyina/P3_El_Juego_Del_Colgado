@@ -104,27 +104,7 @@ public class P3EjercicioDelColgado {
 				
 			}
 			
-			
-			
-			
-			
-	// lista de jugadores y mostrar los jugadores de  cada array
-			
-			
-//			for (int j = 0; j < NomJugadores.length; j++) {
-//			
-//			int contj = 0;
-//			contj ++;
-//				
-//				System.out.println("Jugador"+  contj  + " " + NomJugadors[j]
-//				
-//			}
-			
-			
-			
-			
-			
-			
+		
 			
 			
 			
