@@ -92,6 +92,12 @@ public class P3EjercicioDelColgado {
 			
 				ArrayAlJug = NomJugadores[j]; // Se guardan los nombres de los jugadores en el string de ArrayAlJug
 				ArrayAlJug = NomJugadores[Jugadores.nextInt(NomJugadores.length)];
+				
+				System.out.println(" _______________________________________________________________________");
+				System.out.println("|                                                                       |");
+				System.out.println("|          Jugardor  " + ArrayAlJug + "  Escoge la Palabra Secreta      |");
+				System.out.println("|_______________________________________________________________________|");
+				
 				// Esta parte es un string con una arraid de enteros donde escoge aleatoriamente un nombre de los que se han introducido
 				
 				System.out.println(" ____________________________________________");
