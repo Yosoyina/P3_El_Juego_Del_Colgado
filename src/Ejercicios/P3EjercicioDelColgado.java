@@ -85,7 +85,6 @@ public class P3EjercicioDelColgado {
 		// Es el bucle de las rondas
 		for (int i = 0; i < rondas; i++) {
 			
-			
 			// APARTADO DONDE SE ECOGE UN JUGADOR ALEATORIAMENTE PARA QUE ESCRIBA LA PALABRA SECRETA
 			
 			for (int j = 0; j < NomJugadores.length; j++) {
@@ -110,10 +109,24 @@ public class P3EjercicioDelColgado {
 			String PalabraS = teclado.next() ; // Introduccimos la palabra Serceta
 			PalabraS = PalabraS.toLowerCase(); // Aqui la palabra secreta si se escribe la palabra en mayusculas las pasara en minusculas
 			
+			// Esta parte es una Array de caracteres para cuando se escriba la palabra secreta sera la longitud de la palabra escribida por el jugador
 			
+			char [] Poculta = new char [PalabraS.length()];
 			
+			// Un bucle for para recorrer la Palabra Secreta donde la palabra oculta ser represtara como _,
 			
+			for (int j = 0; j < PalabraS.length(); j++) {
+				
+				Poculta[j] = '_'; 
+				
+			}
 			
+			// Nos devuelve la palabra secreta en caracteres y dentro del recuadro convierte la palabra Oculta en un string 
+			
+			System.out.println(" ______________________________________________________________");
+			System.out.println("|                                                              |");
+			System.out.println("|          La palabra oculta es " + Poculta +"                 |");
+			System.out.println("|______________________________________________________________|");
 		
 			
 		} // acaba el bucle for de las rondas
