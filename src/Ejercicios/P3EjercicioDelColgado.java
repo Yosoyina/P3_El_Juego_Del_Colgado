@@ -93,33 +93,28 @@ public class P3EjercicioDelColgado {
 				ArrayAlJug = NomJugadores[j]; // Se guardan los nombres de los jugadores en el string de ArrayAlJug
 				ArrayAlJug = NomJugadores[Jugadores.nextInt(NomJugadores.length)];
 				
+				// En esta parte nos printe al jugador que le toca escribir la palabra secreta
+				
 				System.out.println(" _______________________________________________________________________");
 				System.out.println("|                                                                       |");
 				System.out.println("|          Jugardor  " + ArrayAlJug + "  Escoge la Palabra Secreta      |");
 				System.out.println("|_______________________________________________________________________|");
 				
-				// Esta parte es un string con una arraid de enteros donde escoge aleatoriamente un nombre de los que se han introducido
-				
-				System.out.println(" ____________________________________________");
-				System.out.println("|                                            |");
-				System.out.println("|          Introduce la Pala Secreta         |");
-				System.out.println("|____________________________________________|");
-				
-				String PalabraSecreta = "";
-				PalabraSecreta = teclado.next();
-				
 			}
+			
+			System.out.println(" ____________________________________________");
+			System.out.println("|                                            |");
+			System.out.println("|          Introduce la Pala Secreta         |");
+			System.out.println("|____________________________________________|");
+			
+			String PalabraS = teclado.next() ; // Introduccimos la palabra Serceta
+			PalabraS = PalabraS.toLowerCase(); // Aqui la palabra secreta si se escribe la palabra en mayusculas las pasara en minusculas
 			
 			
 			
 			
 			
 		
-			
-			
-			
-			
-			
 			
 		} // acaba el bucle for de las rondas
 	}
