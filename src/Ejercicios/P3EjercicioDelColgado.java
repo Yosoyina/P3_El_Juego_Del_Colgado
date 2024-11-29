@@ -87,19 +87,16 @@ public class P3EjercicioDelColgado {
 			
 			// APARTADO DONDE SE ECOGE UN JUGADOR ALEATORIAMENTE PARA QUE ESCRIBA LA PALABRA SECRETA
 			
-			for (int j = 0; j < NomJugadores.length; j++) {
-			
-				ArrayAlJug = NomJugadores[j]; // Se guardan los nombres de los jugadores en el string de ArrayAlJug
-				ArrayAlJug = NomJugadores[Jugadores.nextInt(NomJugadores.length)];
+			ArrayAlJug = NomJugadores[Jugadores.nextInt(NomJugadores.length)];
 				
-				// En esta parte nos printe al jugador que le toca escribir la palabra secreta
+			// En esta parte nos printe al jugador que le toca escribir la palabra secreta
 				
-				System.out.println(" _______________________________________________________________________");
-				System.out.println("|                                                                       |");
-				System.out.println("|          Jugardor  " + ArrayAlJug + "  Escoge la Palabra Secreta      |");
-				System.out.println("|_______________________________________________________________________|");
+			System.out.println(" _______________________________________________________________________");
+			System.out.println("|                                                                       |");
+			System.out.println("|          Jugardor  " + ArrayAlJug + "  Escoge la Palabra Secreta                     |");
+			System.out.println("|_______________________________________________________________________|");
 				
-			}
+		
 			
 			System.out.println(" ____________________________________________");
 			System.out.println("|                                            |");
@@ -125,7 +122,7 @@ public class P3EjercicioDelColgado {
 			
 			System.out.println(" ______________________________________________________________");
 			System.out.println("|                                                              |");
-			System.out.println("|          La palabra oculta es " + Poculta +"                 |");
+			System.out.println("|          La palabra oculta es " + String.valueOf(Poculta) +"                               |");
 			System.out.println("|______________________________________________________________|");
 		
 			
