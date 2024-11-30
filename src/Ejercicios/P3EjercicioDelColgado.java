@@ -182,6 +182,21 @@ public class P3EjercicioDelColgado {
 							}
 						}
 						
+						if (letraVerd) { // Si la letra que ha introduccido el jugador es verdadera salatara este mensaje de que es correcta
+							System.out.println(" _________________________________");
+							System.out.println("|                                 |");
+                            System.out.println("|       La Letra es Correcta      |");
+                            System.out.println("|_________________________________|");
+                            
+                        } else { // En canvio si es falso esa palabra le dira este mensaje ademas de que le restara una vida
+                        	
+                        	System.out.println(" _________________________________");
+							System.out.println("|                                 |");
+                            System.out.println("|      La Letra es Incorrecta     |");
+                            System.out.println("|_________________________________|");
+                        	
+                            vidasJ[j]--; // Si la letra no es correcta se le restara una vida del jugador
+                        }
 						
 					}
 				}
