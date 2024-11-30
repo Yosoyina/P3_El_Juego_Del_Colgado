@@ -120,13 +120,6 @@ public class P3EjercicioDelColgado {
 				
 			}
 			
-			// Nos devuelve la palabra secreta en caracteres y dentro del recuadro convierte la palabra Oculta en un string 
-			
-			System.out.println(" __________________________________________________________________");
-			System.out.println("                                                              ");
-			System.out.println("           La palabra oculta es:   " + String.valueOf(Poculta) +"                ");
-			System.out.println(" __________________________________________________________________");
-		
 			
 			boolean ApparenciaP = false; // Esta varible es falsa para inicializar el bucle
 			
