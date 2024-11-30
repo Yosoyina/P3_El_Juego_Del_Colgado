@@ -160,11 +160,27 @@ public class P3EjercicioDelColgado {
 						System.out.println("           Ingresa una letra de la Palabra Secreta           ");
 						System.out.println("_____________________________________________________________");
 						
-						char Letra = teclado.next().charAt(0);
-						Letra = Character.toLowerCase(Letra);
+						char Letra = teclado.next().charAt(0); // Para que el usuario introduca letra que eeqivale a un caracter
+						Letra = Character.toLowerCase(Letra); // Por si el Usuario Escribe una letra mayuscula para que esa letra mayuscula pase a minuscula
+						
+						boolean letraVerd = false; // Esta variabele es falsa
+	                     
+						// Este for es para verificar si la letra que intoduce el usuario esta dentro de la palabra secreta
+						for (int k = 0; k < PalabraS.length(); k++) {
+							if(PalabraS.charAt(k) == Letra && Poculta[k] == '_' ) {
+								/*
+								 * En esta condicion que vemos que comprueba la posicion de la letra k y qye a la vez
+								 * esta letra coincida con la letra que ha introduccido el jugador 
+								 * 
+								 * y ademas de que la otra condicion lo que haze es que si esa letra no ha sido adivinada entonces que no la muestre
+								 */
+								
+								Poculta[k] = Letra; // En esta parte si la letra es correcta entonces se le mostrara al jugador siguiente
+								letraVerd = true;  // Entonces la letra que es correcta pasara a ser verdadera
+							}
+						}
 						
 						
-	                      
 					}
 				}
 				
