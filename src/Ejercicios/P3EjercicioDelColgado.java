@@ -133,7 +133,7 @@ public class P3EjercicioDelColgado {
 					/*Este bucle for lo que hace es recorrer a todos los jugadores que juegan  dentro de la partida 
 					 * que ademas son los jugadores que preguntamos anteriormente los que van a jugar
 					 */
-					if(vidasJ[j] == 0) { // La condicion de los jugadores que si tienen vidas seguiran jugando en cambio si no tienen se finalizaria el juego
+					if(vidasJ[j] > 0) { // La condicion de los jugadores que si tienen vidas seguiran jugando en cambio si no tienen se finalizaria el juego
 						
 						/*En este apartado esta por secciones
 						 * 
@@ -163,14 +163,18 @@ public class P3EjercicioDelColgado {
 						char Letra = teclado.next().charAt(0);
 						Letra = Character.toLowerCase(Letra);
 						
+						
+	                      
 					}
-					
-					
 				}
-			}
-			
-			
+				
+				
+						
+			}	
 		} // acaba el bucle for de las rondas
+		
+
+		
 	}
 
 }
