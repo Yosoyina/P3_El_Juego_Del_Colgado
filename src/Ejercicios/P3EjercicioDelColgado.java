@@ -227,6 +227,20 @@ public class P3EjercicioDelColgado {
 			
 		} // acaba el bucle for de las rondas
 		
+		//
+		System.out.println(" _________________________");
+		System.out.println("|                         |");
+        System.out.println("|      Rondas Ganadas     |");
+        System.out.println("|_________________________|");
+
+        // Un bucle for para que muestre las rondas que ha ganado cada jugador
+        for (int i = 0; i < rondasG.length; i++) {
+        	System.out.println(" ____________________________________________________________");
+			System.out.println("                                                             ");
+            System.out.println("  "+ NomJugadores[i] + " ha ganado " + rondasG[i] + " rondas.");
+            System.out.println(" ____________________________________________________________");
+        }
+		
 		
 	}
 
