@@ -214,17 +214,37 @@ public class P3EjercicioDelColgado {
 							rondasG[j]++; // Se le sumara 1 ronda ganada por el jugador que haya adivinado la palabra secreta
 							break; // Esto es para salir del bucle si alguien adivina la palabra secreta
 						}	
-					}
-					
-					
+					}	
 				} // Acaba el bucle for del juego	
 				
+				// En este apartado si ningún jugador tiene vidas restantes y la palabra no ha sido adivinada, termina el juego
+				// Esto no servira para que no haga un bucle infinito
+                boolean TJugadoressinV = true;
+                
+                // En este bucle recorremos la longitud de las vidas que tiene cada jugador
+                
+                for (int j = 0; j < vidasJ.length; j++) {
+                    if (vidasJ[j] > 0) { // Si se cumple esta condicion para comprobar si algun jugador tiene almenos una vida restante
+                        TJugadoressinV = false; // Estoes por si no todos los jugadores se han quedado sin vidas porque puede ser que algun jugador tenga una vida
+                        break; // para romper el bucle
+                    }
+                }
+                
+                
+                // Si se cumple la condicion de que todos los jugadores que se hayan quedado sin vidas saldra del bucle y nos printeara este mensaje
+                
+                if (TJugadoressinV) {
+                	
+                	System.out.println(" ____________________________________________________________");
+					System.out.println("                                                             ");
+                    System.out.println("    Todos los jugadores ya no tienen Vidas. (Fin del Juego)  ");
+                    System.out.println(" ____________________________________________________________");
+                    
+                    break; // Se rompe la condicion terminar el juego si todos los jugadores se quedan sin vidas
+                }
 				
-			} // acaba el bucle while
-			
-			
-			
-			
+				
+			} // acaba el bucle while	
 		} // acaba el bucle for de las rondas
 		
 		//
@@ -241,7 +261,7 @@ public class P3EjercicioDelColgado {
             System.out.println(" ____________________________________________________________");
         }
 		
-		
+	
 	}
 
 }
