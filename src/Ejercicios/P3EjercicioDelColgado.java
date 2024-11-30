@@ -179,34 +179,54 @@ public class P3EjercicioDelColgado {
 								
 								Poculta[k] = Letra; // En esta parte si la letra es correcta entonces se le mostrara al jugador siguiente
 								letraVerd = true;  // Entonces la letra que es correcta pasara a ser verdadera
-							}
+							}	
 						}
+						
 						
 						if (letraVerd) { // Si la letra que ha introduccido el jugador es verdadera salatara este mensaje de que es correcta
 							System.out.println(" _________________________________");
 							System.out.println("|                                 |");
-                            System.out.println("|       La Letra es Correcta      |");
-                            System.out.println("|_________________________________|");
-                            
-                        } else { // En canvio si es falso esa palabra le dira este mensaje ademas de que le restara una vida
-                        	
-                        	System.out.println(" _________________________________");
+							System.out.println("|       La Letra es Correcta      |");
+							System.out.println("|_________________________________|");
+							
+						} else { // En canvio si es falso esa palabra le dira este mensaje ademas de que le restara una vida
+							
+							System.out.println(" _________________________________");
 							System.out.println("|                                 |");
-                            System.out.println("|      La Letra es Incorrecta     |");
-                            System.out.println("|_________________________________|");
-                        	
-                            vidasJ[j]--; // Si la letra no es correcta se le restara una vida del jugador
-                        }
+							System.out.println("|      La Letra es Incorrecta     |");
+							System.out.println("|_________________________________|");
+							
+							vidasJ[j]--; // Si la letra no es correcta se le restara una vida del jugador
+						}
 						
+						// Apartado de la verificacion de la Palabra secreta entera si ha sido adivinada
+						
+						// La condicion es que si la palabra oculta que es en letras es igual a la plabra secreta se cumplira la condicion
+						if(String.valueOf(Poculta).equals(PalabraS)) {
+							
+							ApparenciaP = true ; 
+							
+							System.out.println(" ____________________________________________________________");
+							System.out.println("                                                             ");
+							System.out.println(" El Jugador  " + NomJugadores[j] + " ha adivinado la palabra ");
+							System.out.println(" ____________________________________________________________");
+							
+							rondasG[j]++; // Se le sumara 1 ronda ganada por el jugador que haya adivinado la palabra secreta
+							break; // Esto es para salir del bucle si alguien adivina la palabra secreta
+						}	
 					}
-				}
+					
+					
+				} // Acaba el bucle for del juego	
 				
 				
-						
-			}	
+			} // acaba el bucle while
+			
+			
+			
+			
 		} // acaba el bucle for de las rondas
 		
-
 		
 	}
 
