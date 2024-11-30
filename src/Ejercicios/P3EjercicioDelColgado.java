@@ -160,7 +160,7 @@ public class P3EjercicioDelColgado {
 						System.out.println("           Ingresa una letra de la Palabra Secreta           ");
 						System.out.println("_____________________________________________________________");
 						
-						char Letra = teclado.next();
+						char Letra = teclado.next().charAt(0);
 						Letra = Character.toLowerCase(Letra);
 						
 					}
