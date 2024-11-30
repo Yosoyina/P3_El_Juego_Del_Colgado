@@ -91,10 +91,10 @@ public class P3EjercicioDelColgado {
 				
 			// En esta parte nos printe al jugador que le toca escribir la palabra secreta
 				
-			System.out.println(" _______________________________________________________________________");
-			System.out.println("|                                                                       |");
-			System.out.println("|          Jugardor  " + ArrayAlJug + "  Escoge la Palabra Secreta                     |");
-			System.out.println("|_______________________________________________________________________|");
+			System.out.println(" _______________________________________________________________________________");
+			System.out.println("                                                                                ");
+			System.out.println("           Jugardor  " + ArrayAlJug + "  Escoge la Palabra Secreta              ");
+			System.out.println(" _______________________________________________________________________________");
 				
 		
 			
@@ -120,11 +120,14 @@ public class P3EjercicioDelColgado {
 			
 			// Nos devuelve la palabra secreta en caracteres y dentro del recuadro convierte la palabra Oculta en un string 
 			
-			System.out.println(" ______________________________________________________________");
-			System.out.println("|                                                              |");
-			System.out.println("|          La palabra oculta es " + String.valueOf(Poculta) +"                               |");
-			System.out.println("|______________________________________________________________|");
+			System.out.println(" _______________________________________________________________________________________ ");
+			System.out.println("                                                                                         ");
+			System.out.println("           La palabra oculta es " + String.valueOf(Poculta) +"                           ");
+			System.out.println(" _______________________________________________________________________________________ ");
 		
+			
+			
+			
 			
 		} // acaba el bucle for de las rondas
 	}
