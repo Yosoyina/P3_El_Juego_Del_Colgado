@@ -120,13 +120,53 @@ public class P3EjercicioDelColgado {
 			
 			// Nos devuelve la palabra secreta en caracteres y dentro del recuadro convierte la palabra Oculta en un string 
 			
-			System.out.println(" _______________________________________________________________________________________ ");
-			System.out.println("                                                                                         ");
-			System.out.println("           La palabra oculta es " + String.valueOf(Poculta) +"                           ");
-			System.out.println(" _______________________________________________________________________________________ ");
+			System.out.println(" __________________________________________________________________");
+			System.out.println("                                                              ");
+			System.out.println("           La palabra oculta es:   " + String.valueOf(Poculta) +"                ");
+			System.out.println(" __________________________________________________________________");
 		
 			
+			boolean ApparenciaP = false; // Esta varible es falsa para inicializar el bucle
 			
+			while(!ApparenciaP){ // Inicializamos el bucle while hasta que los jugadores descurbran la palabra secreta
+				for (int j = 0; j < Njugadores; j++) { 
+					/*Este bucle for lo que hace es recorrer a todos los jugadores que juegan  dentro de la partida 
+					 * que ademas son los jugadores que preguntamos anteriormente los que van a jugar
+					 */
+					if(vidasJ[j] == 0) { // La condicion de los jugadores que si tienen vidas seguiran jugando en cambio si no tienen se finalizaria el juego
+						
+						/*En este apartado esta por secciones
+						 * 
+						 * La primera seccion nos mostrara un jugador aleatoriamente que tendra que escoger la palabra secreta
+						 * 
+						 * La segunda seccion se mostrara la palabra oculta
+						 * 
+						 * La tercera seccion nos mostrara las vidas de los jugadores 
+						 * 
+						 * La ultima seccion tendremos que introduccir una letra de la palabra secretra
+						 */
+						
+						System.out.println("_____________________________________________________________");
+						System.out.println("                                                             ");
+						System.out.println("        Jugador que escribe la letra: " + NomJugadores[j] + "");
+						System.out.println("_____________________________________________________________");
+						System.out.println("                                                             ");
+						System.out.println("        La Palabra Oculta es: "  + String.valueOf(Poculta) +"");
+						System.out.println("_____________________________________________________________");
+						System.out.println("                                                             ");
+						System.out.println("        Vidas Restantes del Jugador: " + vidasJ[j] + "       ");
+						System.out.println("_____________________________________________________________");
+						System.out.println("                                                             ");
+						System.out.println("           Ingresa una letra de la Palabra Secreta           ");
+						System.out.println("_____________________________________________________________");
+						
+						
+						
+					}
+					
+					
+				}
+			}
 			
 			
 		} // acaba el bucle for de las rondas
