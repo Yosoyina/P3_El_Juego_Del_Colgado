@@ -62,16 +62,7 @@ public class P3EjercicioDelColgado {
 			
 		}
 	
-		// APARTADO DE LAS VIDAS DE LOS JUGADORES
-		
-		int [] vidasJ ; // creamos la arraid de las vidas de los jugadores
-		vidasJ = new int [Njugadores]; // las vidas de tantos jugadores de los que van a jugar
-		
-		for (int j = 0; j < vidasJ.length; j++) {
-			
-			vidasJ[j] = vidasJ[j] + 6; // las vidas se guardan en dentro de la arraid que son 6
-			
-		}
+		int [] rondasG = new int [Njugadores]; // Contador de cada jugador de rondas que ha ganado
 		
 		// APARTADO DE LAS RONDAS E INICIALIZACION DE LOS JUEGOS
 		
@@ -84,6 +75,17 @@ public class P3EjercicioDelColgado {
 		
 		// Es el bucle de las rondas
 		for (int i = 0; i < rondas; i++) {
+			
+			// APARTADO DE LAS VIDAS DE LOS JUGADORES POR RONDAS
+			
+			int [] vidasJ ; // creamos la arraid de las vidas de los jugadores
+			vidasJ = new int [Njugadores]; // las vidas de tantos jugadores de los que van a jugar
+			
+			for (int j = 0; j < vidasJ.length; j++) {
+				
+				vidasJ[j] = vidasJ[j] + 6; // las vidas se guardan en dentro de la arraid que son 6
+				
+			}
 			
 			// APARTADO DONDE SE ECOGE UN JUGADOR ALEATORIAMENTE PARA QUE ESCRIBA LA PALABRA SECRETA
 			
